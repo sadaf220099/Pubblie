@@ -27,15 +27,16 @@ const faqs = [
 ];
 
 export const Faq = () => {
-  // Map FAQs into Collapse items
   const items = faqs.map((faq, index) => ({
     key: index.toString(),
     label: (
-      <span className="text-lg font-bold text-gray-800 border-0">{faq.question}</span>
+      <span className="text-base sm:text-lg font-bold text-gray-800 border-0">
+        {faq.question}
+      </span>
     ),
     children: (
       <>
-        <p className="text-black">{faq.answer}</p>
+        <p className="text-sm sm:text-base text-black">{faq.answer}</p>
         {index !== faqs.length - 1 && (
           <Divider className=" bg-white h-[1px]" />
         )}
@@ -45,36 +46,46 @@ export const Faq = () => {
 
   return (
     <div
-      className="relative bg-cover bg-center h-[600px] z-1"
+      className="relative bg-cover bg-center min-h-[600px] z-1 "
       style={{ backgroundImage: `url(${background2})` }}
     >
       <UserCamp />
-      <img src={flower1} className="absolute left-0 top-10 z-1" alt="flower1" />
-      <img src={flower2} className="absolute right-0 -bottom-7" alt="flower2" />
+
+      <img
+        src={flower1}
+        className="absolute left-0 top-10 z-1 w-16 sm:w-32 md:w-42 lg:w-52 xl:w-60"
+        alt="flower1"
+      />
+      <img
+        src={flower2}
+        className="absolute right-0 -bottom-7 w-16 sm:w-32 md:w-42 lg:w-52 xl:w-60"
+        alt="flower2"
+      />
 
       <div>
-        <h2 className="pt-30 font-bold text-white text-5xl text-center">
+        <h2 className="pt-20 sm:pt-30 font-bold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">
           Frequently Asked Questions
         </h2>
-        <h4 className="pt-2 text-white text-center">
+        <h4 className="pt-2 text-white text-center text-sm sm:text-base md:text-lg lg:text-xl">
           These are the most asked questions about PUBBLIE
         </h4>
       </div>
 
-      <div className="ml-90 mr-80 mt-10 bg-white rounded-3xl p-6">
-        <Collapse
-          accordion
-          items={items}
-          className="border-0"
-          bordered={false}
-          expandIcon={({ isActive }) => (
-            <span className="flex items-center justify-center w-6 h-6 rounded-full border-2 border-gray-500 text-gray-500 text-sm font-bold">
-              {isActive ? "−" : "+"}
-            </span>
-          )}
-          expandIconPosition="end"
-        />
-      </div>
+      <div className="mt-6 sm:mt-10 bg-white rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12
+  max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto">
+  <Collapse
+    accordion
+    items={items}
+    className="border-0"
+    bordered={false}
+    expandIcon={({ isActive }) => (
+      <span className="flex items-center justify-center w-6 h-6 rounded-full border-2 border-gray-500 text-gray-500 text-sm font-bold">
+        {isActive ? "−" : "+"}
+      </span>
+    )}
+    expandIconPosition="end"
+  />
+</div>
     </div>
   );
 };

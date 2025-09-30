@@ -28,18 +28,22 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex">
+    <div className=" grid lg:grid-cols-2  px-4 lg:px-16  mt-10 md:space-x-8">
       {/* Left side form */}
-      <div className="max-w-xl mx-auto p-6 bg-white shadow-lg rounded-2xl mt-10 mb-10">
-        <h3 className="text-blue-600 font-semibold">Get in touch</h3>
-        <h1 className="text-2xl font-bold mb-2">Let's Chat, Reach Out to Us</h1>
-        <p className="text-gray-600 mb-6">
+      <div className="w-[100%] p-6 lg:p-10 bg-white shadow-lg rounded-2xl  mb-10">
+        <h3 className="text-blue-600 font-semibold text-base lg:text-lg">
+          Get in touch
+        </h3>
+        <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold mb-2">
+          Let's Chat, Reach Out to Us
+        </h1>
+        <p className="text-gray-600 mb-6 text-sm lg:text-base xl:text-lg">
           Have questions or feedback? We're here to help. Send us a message, and
           we'll respond within 24 hours.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Input
               label="First name"
               name="firstName"
@@ -86,7 +90,7 @@ const ContactForm = () => {
             />
           </div>
 
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center flex-wrap gap-3">
             <label className="flex items-center space-x-2">
               <input
                 type="checkbox"
@@ -109,11 +113,16 @@ const ContactForm = () => {
       </div>
 
       {/* Right side contact info */}
-      <div className="flex flex-col">
-        <div>
-          <img src={form} alt="form banner" />
+      <div className="w-[100%]  shadow-md flex flex-col items-center">
+        <div className="w-full ">
+          <img
+            src={form}
+            alt="form banner"
+            className="w-full h-auto object-contain"
+          />
         </div>
-        <div className="w-150 mb-10 mx-auto p-6 bg-white shadow-lg rounded-2xl">
+
+        <div className="w-full mb-10 mx-auto p-6 lg:p-8 xl:p-10 bg-white shadow-lg rounded-2xl">
           <div className="flex items-center space-x-4 p-4 rounded-lg bg-gray-50 mb-3">
             <div className="bg-blue-100 text-blue-600 p-3 rounded-full">
               <Icon icon="mdi:email-outline" width="24" height="24" />

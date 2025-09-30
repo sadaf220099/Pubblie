@@ -15,51 +15,54 @@ export const Works = () => {
       cardname: "Create Your Campaign",
       carddetail:
         "Define goals, audience, and deadlines using our step-by-step wizard.",
-      classname:"top-36 right-120 ",
-
+      classname: "top-36 right-9 lg:right-120",
     },
     {
       image: work2,
       cardname: "Collaborate with Influencers",
       carddetail:
         "Find influencers and manage submissions seamlessly.",
-        classname:"top-85 left-70"
+      classname: "top-85 left-0 lg:left-70",
     },
     {
       image: work3,
       cardname: "Analyze Results",
       carddetail:
         "Track performance and refine campaigns with analytics.",
-        classname:"-bottom-7 right-120"
-    }
+      classname: "bottom-7 right-10 lg:right-120",
+    },
   ]
 
   return (
-    <div className="relative w-full h-[700px] mb-20 bg-[#FDFDFD]">
-      <div className="absolute top-0 right-0 w-[400px] h-[200px] bg-blue-500 rounded-full opacity-70 blur-[120px]"></div>
-      <div className="absolute bottom-0 left-0 -z-0 w-[400px] h-[200px] bg-blue-500 rounded-full opacity-70 blur-[120px]"></div>
-      <img src={Shape1} alt="shape1" className="absolute left-0 -top-5 z-1" />
-      <img src={Shape2} alt="shape2" className="absolute right-0 -bottom-30" />
+    <div className="relative w-full min-h-[700px] mb-20 bg-[#FDFDFD]">
+      {/* background blobs */}
+      <div className="absolute top-0 right-0 w-[250px] md:w-[400px] h-[120px] md:h-[200px] bg-blue-500 rounded-full opacity-70 blur-[100px]"></div>
+      <div className="absolute bottom-0 left-0 -z-0 w-[250px] md:w-[400px] h-[120px] md:h-[200px] bg-blue-500 rounded-full opacity-70 blur-[100px]"></div>
+
+      {/* decorative shapes */}
+      <img src={Shape1} alt="shape1" className="absolute left-0 -top-5 z-1 w-12 sm:w-16 md:w-32" />
+      <img src={Shape2} alt="shape2" className="absolute right-0 -bottom-30 w-12 sm:w-16 md:w-32" />
       
+      {/* heading */}
       <div>
-        <h2 className="pt-10 font-bold text-black text-5xl text-center">
+        <h2 className="pt-10 font-bold text-black text-2xl sm:text-3xl md:text-5xl text-center">
           How PUBBLIE Works
         </h2>
-        <h4 className="pt-2 text-black text-center">
+        <h4 className="pt-2 text-black text-sm sm:text-base md:text-lg text-center">
           Streamline your campaign journey in three simple steps
         </h4>
       </div>
-     <div>
-        <img src={circle1} className='ml-100 pt-10 absolute'/>
-      <img src={Group5} className='mx-auto h-[600px]' />
+      <div>
+        <img src={circle1} className="hidden md:block lg:ml-170 pt-10 absolute" />
+        <img src={Group5} className="hidden md:block mx-auto h-[400px] lg:h-[600px]" />
       </div>
-      <div className="p-10 flex flex-col mx-auto gap-6 justify-center">
+      <div className="p-10 flex flex-col md:flex-row mx-auto gap-6 justify-center">
         {carddata.map((workcard, index) => (
           <WorkCards
             key={index}
             image={workcard.image}
-            cardname={workcard.cardname}   
-            carddetail={workcard.carddetail} 
+            cardname={workcard.cardname}
+            carddetail={workcard.carddetail}
             classname={workcard.classname}
           />
         ))}

@@ -9,10 +9,15 @@ import user3 from "../../assets/images/user3.png";
 import user4 from "../../assets/images/user4.png";
 import user5 from "../../assets/images/user5.png";
 import user6 from "../../assets/images/user6.png";
+import Button from "./Button";
 
 export const User = () => {
   const carddata = [
-    { image: user1, username: "Andrew Tate", userdetail: "“Track performance & refine campaigns with analytics”" },
+    { image: user1,
+       username: "Andrew Tate",
+        userdetail: "“Track performance & refine campaigns with analytics”"
+       },
+
     { image: user2, username: "Jimmy Johns", userdetail: "“Track performance & refine campaigns with analytics”" },
     { image: user3, username: "Palo Tate", userdetail: "“Track performance & refine campaigns with analytics”" },
     { image: user4, username: "Roma Peol", userdetail: "“Track performance & refine campaigns with analytics”" },
@@ -37,11 +42,11 @@ export const User = () => {
           modules={[Autoplay]}
           spaceBetween={20}
           loop={true}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          autoplay={{ delay: 700, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           breakpoints={{
-            0: { slidesPerView: 5},       // Mobile
-            640: { slidesPerView: 5 },     // Small tablets
+            0: { slidesPerView: 2},       // Mobile
+            640: { slidesPerView: 3},     // Small tablets
             1024: { slidesPerView: 5 },    // Laptops
             1280: { slidesPerView: 5 },    // Desktops
             1536: { slidesPerView: 5 },    // Very large screens
@@ -66,9 +71,11 @@ export const User = () => {
       </p>
 
       <div className="flex justify-center">
-        <button className="bg-white border-blue-500 border-2 rounded-3xl text-blue-500 px-8 py-2 md:px-10">
+        {/* <button className="bg-white border-blue-500 border-2 rounded-3xl text-blue-500 px-8 py-2 md:px-10">
           Join Us Now
-        </button>
+        </button> */}
+        <Button type="join" className=" border-blue-500 border-2 rounded-3xl text-blue-500 px-8 py-2 md:px-10">Join Us Now</Button>
+      
       </div>
     </div>
   );

@@ -36,15 +36,18 @@ function Advertiser() {
 
   return (
     <div
-      className="bg-cover bg-center h-[600px]"
+      className="bg-cover bg-center min-h-[600px]"
       style={{ backgroundImage: `url(${background1})` }}
     >
-      <div className=" inset-0 pt-20 pl-170 text-white">
-        <h1 className="text-4xl text-[#8BBFFF] pl-48 font-bold">What makes Pubblie different</h1>
-        <p className="mt-2 text-lg text-[#8BBFFF]">Revolutionizing the way advertisers and influencers collaborate for unparalleled success.</p>
-
+      <div className="inset-0 pt-10 md:pt-20 px-6 md:px-20 text-white text-center md:text-right">
+        <h1 className="text-2xl md:text-4xl text-[#8BBFFF] font-bold">
+          What makes Pubblie different
+        </h1>
+        <p className="mt-2 text-base md:text-lg text-[#8BBFFF]">
+          Revolutionizing the way advertisers and influencers collaborate for unparalleled success.
+        </p>
       </div>
-      <div className=" flex p-12">
+      <div className="flex sm:flex-row md:flex-row flex-wrap justify-start gap-6 p-6 md:p-12">
         {cardsdata.map((card, index) => (
           <Cards
             key={index}
@@ -59,4 +62,3 @@ function Advertiser() {
 }
 
 export default Advertiser;
-

@@ -1,5 +1,6 @@
 
 @import "tailwindcss";
+@import "./style/Button.css";
 
 :root{
 
@@ -9,4 +10,8 @@
 
 
 
+}
+
+.brand{
+  @apply w-12 sm:w-14 md:w-16 lg:w-fit;
 }

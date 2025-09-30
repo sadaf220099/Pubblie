@@ -20,7 +20,13 @@ export default function SwiperEffect() {
       effect="coverflow"
       grabCursor
       centeredSlides
-      slidesPerView={4}
+       breakpoints={{
+            0: { slidesPerView: 2},       // Mobile
+            640: { slidesPerView: 3},     // Small tablets
+            1024: { slidesPerView: 5 },    // Laptops
+            1280: { slidesPerView: 5 },    // Desktops
+            1536: { slidesPerView: 5 },    // Very large screens
+          }}
       spaceBetween={70}
       coverflowEffect={{
         rotate: 30,
@@ -28,10 +34,12 @@ export default function SwiperEffect() {
         depth: 100,
         modifier: 1,
         slideShadows: true,
+        
       }}
     //   pagination
       modules={[EffectCoverflow, Pagination ,Autoplay]}
       className="mySwiper"
+       autoplay={{ delay: 700, disableOnInteraction: false }}
     >
       {[Elemet1, Elemet2, Elemet3, Elemet4, Elemet5, Elemet6, Elemet7].map(
         (img, i) => (

@@ -5,6 +5,8 @@ import line from "../assets/images/line.png";
 import { Icon } from "@iconify/react";
 
 export const Footer = () => {
+  const date=new Date
+  const year= date.getFullYear()
   return (
     <div
       className="bg-cover bg-center min-h-[150px] text-[var(--primary)]"
@@ -12,13 +14,14 @@ export const Footer = () => {
     >
       {/* Logo */}
       <img src={logofooter} alt="Footer Logo" className="mx-auto p-5" />
-      <img src={line} alt="Divider" className="mx-auto" />
+      {/* <img src={line} alt="Divider" className="mx-auto" /> */}
+      <hr/>
 
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-4 gap-4 md:gap-0">
         {/* Text */}
         <p className="text-sm text-center md:text-left">
-          pubblie © 202X. All rights reserved.
+          pubblie © {year}. All rights reserved.
         </p>
 
         {/* Social Icons */}
