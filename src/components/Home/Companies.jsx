@@ -5,7 +5,7 @@ import circle from '../../assets/icons/circle.png'
 
 function Companies() {
   return (
-    <div className='bg-[#1F4790] mt-15 p-4 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12'>
+    <div className='bg-companies mt-15 p-4 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12'>
       
       <div className='flex items-center gap-3'>
         <img src={licence} className='w-6 sm:w-8 lg:w-10' />

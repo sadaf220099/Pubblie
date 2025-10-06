@@ -4,10 +4,11 @@ import flower1 from "../../assets/images/flower1.png";
 import flower2 from "../../assets/images/flower2.png";
 import { Collapse, Divider } from "antd";
 import { UserCamp } from "./UserCamp";
+import {Icon} from "@iconify/react"
 
 const faqs = [
   {
-    question: "How are influencers matched to campaigns?",
+    question: <div className="">How are influencers matched to campaigns?</div>,
     answer:
       "Funds are securely held until the campaign is completed and requirements are met, ensuring trust for both advertisers and influencers.",
   },
@@ -79,8 +80,8 @@ export const Faq = () => {
     className="border-0"
     bordered={false}
     expandIcon={({ isActive }) => (
-      <span className="flex items-center justify-center w-6 h-6 rounded-full border-2 border-gray-500 text-gray-500 text-sm font-bold">
-        {isActive ? "−" : "+"}
+      <span className="flex items-center justify-center w-6 h-6 rounded-full border-2 border-[#98A2B3] text-[#98A2B3] text-sm font-bold">
+        {isActive ? <Icon icon="basil:plus-outline" width="24" height="24" className=" text-[#98A2B3]" />:<Icon icon="basil:cross-solid" width="24" height="24"  className=" text-[#98A2B3]"/>}
       </span>
     )}
     expandIconPosition="end"

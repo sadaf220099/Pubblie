@@ -15,7 +15,7 @@ export const Footer = () => {
       {/* Logo */}
       <img src={logofooter} alt="Footer Logo" className="mx-auto p-5" />
       {/* <img src={line} alt="Divider" className="mx-auto" /> */}
-      <hr/>
+      <hr className="!border-[#C1C7CD]"/>
 
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-4 gap-4 md:gap-0">

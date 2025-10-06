@@ -34,11 +34,11 @@ export const Navbar = () => {
             <h2 className="text-black text-sm lg:text-base xl:text-lg">
               Become a Creator
             </h2>
-            <button className="bg-black text-white rounded-full px-5 py-2 lg:px-6 xl:px-8 lg:py-2.5 shadow-lg">
+            <button className="!bg-black text-white rounded-full px-5 py-2 lg:px-6 xl:px-8 lg:py-2.5 shadow-lg">
               Log In as a brand
             </button>
             <button className="bg-blue-500 text-white rounded-full px-5 py-2 lg:px-6 xl:px-8 lg:py-2.5 shadow-lg">
-              Sign In
+              Sign Up
             </button>
           </div>
 

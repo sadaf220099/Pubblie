@@ -2,6 +2,7 @@ import React from "react";
 import { UserCard } from "./UserCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { Icon } from "@iconify/react";
 
 import user1 from "../../assets/images/user1.png";
 import user2 from "../../assets/images/user2.png";
@@ -10,6 +11,7 @@ import user4 from "../../assets/images/user4.png";
 import user5 from "../../assets/images/user5.png";
 import user6 from "../../assets/images/user6.png";
 import Button from "./Button";
+import dot from '../../assets/images/dot.png'
 
 export const User = () => {
   const carddata = [
@@ -17,8 +19,7 @@ export const User = () => {
        username: "Andrew Tate",
         userdetail: "“Track performance & refine campaigns with analytics”"
        },
-
-    { image: user2, username: "Jimmy Johns", userdetail: "“Track performance & refine campaigns with analytics”" },
+    { image: user2, username: "Jimmy Johns", userdetail: "“Track performance & refine  campaigns with analytics”" },
     { image: user3, username: "Palo Tate", userdetail: "“Track performance & refine campaigns with analytics”" },
     { image: user4, username: "Roma Peol", userdetail: "“Track performance & refine campaigns with analytics”" },
     { image: user5, username: "Salena Gomiz", userdetail: "“Track performance & refine campaigns with analytics”" },
@@ -71,10 +72,11 @@ export const User = () => {
       </p>
 
       <div className="flex justify-center">
-        {/* <button className="bg-white border-blue-500 border-2 rounded-3xl text-blue-500 px-8 py-2 md:px-10">
+        {/* <img src={dot} /> */}
+        <button  className="!bg-white  border-blue-500 w-[280px] border-2 rounded-3xl !text-blue-500 px-8 py-2 md:px-10">
           Join Us Now
-        </button> */}
-        <Button type="join" className=" border-blue-500 border-2 rounded-3xl text-blue-500 px-8 py-2 md:px-10">Join Us Now</Button>
+        </button>
+        {/* <Button type="join" className=" border-blue-500 border-2 rounded-3xl text-blue-500 px-8 py-2 md:px-10">Join Us Now</Button> */}
       
       </div>
     </div>

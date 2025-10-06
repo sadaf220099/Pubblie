@@ -3,15 +3,15 @@
 @import "./style/Button.css";
 
 :root{
-
-
   --primary: white;
-
-
-
-
 }
-
 .brand{
   @apply w-12 sm:w-14 md:w-16 lg:w-fit;
+}
+.bg-companies{
+  background: linear-gradient(90deg, #3579F6 0%, #1F4790 100%);
+}
+.ant-collapse-header-text
+{
+  color: green !important;
 }

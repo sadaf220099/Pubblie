@@ -8,6 +8,7 @@ import icon3 from '../../assets/icons/icon3.png'
 import icon4 from '../../assets/icons/icon4.png'
 import icon5 from '../../assets/icons/icon5.png'
 import Companies from './Companies';
+import Button from '../../assets/images/Button.png'
 
 export const HeroSection =() => {
   return (
@@ -36,11 +37,14 @@ export const HeroSection =() => {
       </h1>
 
       
-      <div className='flex  sm:flex-row justify-center items-center gap-0 p-6 sm:p-10'>
+      {/* <div className='flex  sm:flex-row justify-center items-center gap-0 p-6 sm:p-10'>
         <button className="bg-blue-500 text-white rounded-4xl px-6 py-3 shadow-3xl text-sm sm:text-base">Create Account Now</button>
         <button className="bg-blue-500 text-white rounded-4xl px-6 py-3 shadow-3xl flex items-center justify-center text-sm sm:text-base">
           <Icon icon="mdi:arrow-right" width="20" height="20" />
         </button>
+      </div> */}
+      <div className='flex justify-center sm:flex-row items-center gap-0 p-6 sm:p-10'>
+      <img src={Button} />
       </div>
      
       {/* Stats & Icons */}
@@ -49,7 +53,7 @@ export const HeroSection =() => {
           <h1 className='font-bold text-xl sm:text-2xl md:text-3xl'>20,000+</h1>
           <h1 className='text-sm sm:text-base md:text-lg'>happy Clients</h1>
           {/* Bottom Left Shape */}
-          <img src={Shape} className='absolute -left-6 sm:-left-10 -bottom-20 sm:-bottom-40 w-20 sm:w-28 md:w-36'/>
+          <img src={Shape} className='absolute -left-6 sm:-left-10 -bottom-20 -z-10 sm:-bottom-40 w-20 sm:w-28 md:w-36'/>
         </div> 
 
       <div className=' flex gap-4 md:gap-20 flex-wrap justify-center'>

@@ -23,8 +23,8 @@ export default function SwiperEffect() {
        breakpoints={{
             0: { slidesPerView: 2},       // Mobile
             640: { slidesPerView: 3},     // Small tablets
-            1024: { slidesPerView: 5 },    // Laptops
-            1280: { slidesPerView: 5 },    // Desktops
+            1024: { slidesPerView: 4 },    // Laptops
+            1280: { slidesPerView: 4 },    // Desktops
             1536: { slidesPerView: 5 },    // Very large screens
           }}
       spaceBetween={70}
@@ -39,13 +39,13 @@ export default function SwiperEffect() {
     //   pagination
       modules={[EffectCoverflow, Pagination ,Autoplay]}
       className="mySwiper"
-       autoplay={{ delay: 700, disableOnInteraction: false }}
+       autoplay={{ delay: 1000, disableOnInteraction: false }}
     >
       {[Elemet1, Elemet2, Elemet3, Elemet4, Elemet5, Elemet6, Elemet7].map(
         (img, i) => (
           <SwiperSlide key={i}>
             <img src={img} alt={`element-${i + 1}`}
-            className="h-40 w-240" />
+            className="h-35 w-280" />
           </SwiperSlide>
         )
       )}

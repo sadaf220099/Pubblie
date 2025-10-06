@@ -22,7 +22,7 @@ export const Works = () => {
       cardname: "Collaborate with Influencers",
       carddetail:
         "Find influencers and manage submissions seamlessly.",
-      classname: "top-85 left-0 lg:left-70",
+      classname: "top-85 left-0 lg:left-90",
     },
     {
       image: work3,
@@ -40,7 +40,7 @@ export const Works = () => {
       <div className="absolute bottom-0 left-0 -z-0 w-[250px] md:w-[400px] h-[120px] md:h-[200px] bg-blue-500 rounded-full opacity-70 blur-[100px]"></div>
 
       {/* decorative shapes */}
-      <img src={Shape1} alt="shape1" className="absolute left-0 -top-5 z-1 w-12 sm:w-16 md:w-32" />
+      <img src={Shape1} alt="shape1" className="absolute left-0 -top-3 z-1 w-12 sm:w-16 md:w-32" />
       <img src={Shape2} alt="shape2" className="absolute right-0 -bottom-30 w-12 sm:w-16 md:w-32" />
       
       {/* heading */}
@@ -53,7 +53,7 @@ export const Works = () => {
         </h4>
       </div>
       <div>
-        <img src={circle1} className="hidden md:block lg:ml-170 pt-10 absolute" />
+        <img src={circle1} className="hidden w-[64.70px]  md:block lg:ml-143 pt-10 absolute" />
         <img src={Group5} className="hidden md:block mx-auto h-[400px] lg:h-[600px]" />
       </div>
       <div className="p-10 flex flex-col md:flex-row mx-auto gap-6 justify-center">

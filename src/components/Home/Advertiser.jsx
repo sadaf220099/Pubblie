@@ -5,6 +5,7 @@ import card1 from "../../assets/icons/card1.png";
 import card2 from "../../assets/icons/card2.png";
 import card3 from "../../assets/icons/card3.png";
 import card4 from "../../assets/icons/card4.png";
+import a from '../../assets/images/a.png';
 
 function Advertiser() {
   const cardsdata = [
@@ -36,7 +37,7 @@ function Advertiser() {
 
   return (
     <div
-      className="bg-cover bg-center min-h-[600px]"
+      className="bg-cover bg-center min-h-[600px] relative"
       style={{ backgroundImage: `url(${background1})` }}
     >
       <div className="inset-0 pt-10 md:pt-20 px-6 md:px-20 text-white text-center md:text-right">
@@ -47,7 +48,7 @@ function Advertiser() {
           Revolutionizing the way advertisers and influencers collaborate for unparalleled success.
         </p>
       </div>
-      <div className="flex sm:flex-row md:flex-row flex-wrap justify-start gap-6 p-6 md:p-12">
+      <div className="flex sm:flex-row md:flex-row flex-wrap justify-start gap-2 p-6 md:p-12">
         {cardsdata.map((card, index) => (
           <Cards
             key={index}
@@ -57,6 +58,11 @@ function Advertiser() {
           />
         ))}
       </div>
+      <div className="absolute flex justify-center left-1/2 transform -translate-x-1/2 -bottom-8 items-center z-2">
+  <img src={a} alt="a" />
+</div>
+
+
     </div>
   );
 }
