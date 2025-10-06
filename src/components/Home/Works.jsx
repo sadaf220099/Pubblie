@@ -5,7 +5,7 @@ import { WorkCards } from './WorkCards'
 import work1 from '../../assets/images/work1.png'
 import work2 from '../../assets/images/work2.png'
 import work3 from '../../assets/images/work3.png'
-import Group5 from '../../assets/images/Group5.png'
+import roadmap from '../../assets/images/roadmap.png'
 import circle1 from '../../assets/images/circle1.png'
 
 export const Works = () => {
@@ -15,21 +15,21 @@ export const Works = () => {
       cardname: "Create Your Campaign",
       carddetail:
         "Define goals, audience, and deadlines using our step-by-step wizard.",
-      classname: "top-36 right-9 lg:right-120",
+      classname: "top-30 right-7 lg:right-120",
     },
     {
       image: work2,
       cardname: "Collaborate with Influencers",
       carddetail:
         "Find influencers and manage submissions seamlessly.",
-      classname: "top-85 left-0 lg:left-90",
+      classname: "top-85 left-24 lg:left-90",
     },
     {
       image: work3,
       cardname: "Analyze Results",
       carddetail:
         "Track performance and refine campaigns with analytics.",
-      classname: "bottom-7 right-10 lg:right-120",
+      classname: "bottom-9 right-20 lg:right-120",
     },
   ]
 
@@ -53,17 +53,7 @@ export const Works = () => {
         </h4>
       </div>
       <div>
-        {/* <img src={circle1} className="hidden w-[64.70px]  md:block lg:ml-143 pt-10 absolute" /> */}
-       <div className="relative">
-  <img
-    src={circle1}
-    alt="circle"
-    className="hidden md:block absolute  top-4 left-1/3 w-[65px]"
-  />
-</div>
-
-
-        <img src={Group5} className="hidden md:block mx-auto h-[400px] lg:h-[600px]" />
+        <img src={roadmap} className="hidden md:block mx-auto h-[400px] lg:h-[600px]" />
       </div>
       <div className="p-10 flex flex-col md:flex-row mx-auto gap-6 justify-center">
         {carddata.map((workcard, index) => (

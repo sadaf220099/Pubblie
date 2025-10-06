@@ -121,16 +121,16 @@ const ContactForm = () => {
       </div>
 
       {/* Right side contact info */}
-      <div className="w-[100%] flex flex-col items-center">
+      <div className="w-[] flex flex-col ml-3 items-center">
         <div className="w-full ">
           <img
             src={form}
             alt="form banner"
-            className="w-full ml-10 h-auto mb-10 object-contain"
+            className="w-full h-auto mb-3 object-contain"
           />
         </div>
 
-        <div className="w-full object-contain mb-10 ml-10 mx-auto p-6 lg:p-8 xl:p-10 bg-white shadow-lg rounded-2xl">
+        <div className="w-full object-contain mb-10 mx-auto p-6 lg:p-8 xl:p-10 bg-white shadow-lg rounded-2xl">
           <div className="flex items-center space-x-4 p-4 rounded-lg bg-gray-50 mb-3">
             <div className="bg-blue-100 text-blue-600 p-3 rounded-full">
               <Icon icon="mdi:email-outline" width="24" height="24" />
