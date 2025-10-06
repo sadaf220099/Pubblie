@@ -53,7 +53,16 @@ export const Works = () => {
         </h4>
       </div>
       <div>
-        <img src={circle1} className="hidden w-[64.70px]  md:block lg:ml-143 pt-10 absolute" />
+        {/* <img src={circle1} className="hidden w-[64.70px]  md:block lg:ml-143 pt-10 absolute" /> */}
+       <div className="relative">
+  <img
+    src={circle1}
+    alt="circle"
+    className="hidden md:block absolute  top-4 left-1/3 w-[65px]"
+  />
+</div>
+
+
         <img src={Group5} className="hidden md:block mx-auto h-[400px] lg:h-[600px]" />
       </div>
       <div className="p-10 flex flex-col md:flex-row mx-auto gap-6 justify-center">

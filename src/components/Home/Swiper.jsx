@@ -27,11 +27,11 @@ export default function SwiperEffect() {
             1280: { slidesPerView: 4 },    // Desktops
             1536: { slidesPerView: 5 },    // Very large screens
           }}
-      spaceBetween={70}
+      spaceBetween={50}
       coverflowEffect={{
         rotate: 30,
         stretch: 0,
-        depth: 100,
+        depth: 70,
         modifier: 1,
         slideShadows: true,
         
@@ -45,7 +45,7 @@ export default function SwiperEffect() {
         (img, i) => (
           <SwiperSlide key={i}>
             <img src={img} alt={`element-${i + 1}`}
-            className="h-35 w-280" />
+            className="h-35 w-580" />
           </SwiperSlide>
         )
       )}
